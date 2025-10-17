@@ -110,3 +110,4 @@ coverage/
 
 # Local development
 .local
+.vercel
