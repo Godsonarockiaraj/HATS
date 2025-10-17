@@ -1,0 +1,39 @@
+{
+  "name": "hats-application-tracking-system",
+  "version": "1.0.0",
+  "description": "HATS - Hybrid Application Tracking System - A comprehensive MERN stack application",
+  "main": "server/server.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "deploy": "node deploy.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd client && npm run build",
+    "seed": "cd server && npm run seed",
+    "test": "node test-api.js",
+    "start": "cd server && npm start",
+    "vercel-build": "cd client && npm install && npm run build"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "express",
+    "mongodb",
+    "nodejs",
+    "application-tracking",
+    "job-application",
+    "ats"
+  ],
+  "author": "Godson Arockia Raj",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
+}
