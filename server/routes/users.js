@@ -101,4 +101,9 @@ router.get('/', auth, requireRole(['admin']), async (req, res) => {
   }
 });
 
+// Test endpoint
+router.get('/test', (req, res) => {
+  res.json({ message: 'Users API is working!' });
+});
+
 module.exports = router;
