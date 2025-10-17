@@ -23,7 +23,11 @@
     }
   ],
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "MONGODB_URI": "mongodb+srv://hats-user:hats-password123@cluster0.mongodb.net/hats?retryWrites=true&w=majority",
+    "JWT_SECRET": "hats_super_secret_jwt_key_2024_production_secure_random_string_very_long",
+    "PORT": "5000",
+    "MAX_FILE_SIZE": "5242880"
   },
   "headers": [
     {
